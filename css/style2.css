@@ -1,0 +1,151 @@
+
+/* 
+Author: Angel Chey Ee Zia
+Date: 2 Aug 2022 
+
+Filename: style2.css     
+
+Use to create styles for second page of website: 
+My Expereince in SP
+*/
+
+
+/* section style: introducing sp and soc */
+body section > h1{
+    background-color: rgb(218, 174, 85);
+    box-shadow: black 3px -1px 10px;
+}
+body section h4{
+    background-color: rgb(223, 200, 155);
+    box-shadow: black 3px -1px 10px;
+}
+
+/*section style: courses in SOC */
+.card {
+    font-size: 1.3em;
+    max-width: 1000px;
+}
+.card-header{
+    background-color: rgb(223, 200, 155);
+    box-shadow: black 3px -1px 10px;
+}
+.card-body{
+    background: radial-gradient(rgb(47, 228, 150),rgb(134, 38, 212));
+    box-shadow: black 3px -2px 10px;
+}
+body section div#accordion figure img{
+    max-height: 200px;
+    max-width: 280px;
+    border-radius: 20px;
+    box-shadow: black 3px -2px 10px;
+}
+body figure#cuteRobot img{
+    max-height: 400px;
+    width: auto;
+    margin-top: 30px;
+}
+
+body figure#cuteRobot p{
+    height: 70%;
+    width: auto;
+    padding: 30px;
+    background-color: rgb(223, 200, 155);
+    box-shadow: black 3px -1px 10px;
+    border-radius: 30%;
+}
+
+
+/* table style: courses info */
+table#courseInfo{
+    box-shadow: black 3px -2px 10px;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    max-width: 700px;
+}
+thead{
+    background-color: rgba(70, 125, 244, 0.78);
+}
+tbody{
+    background: radial-gradient(rgba(0, 255, 94, 0.78), rgb(255, 225, 0));
+}
+tfoot{
+    background-color: rgba(89, 68, 43, 0.78);
+    color: white;
+}
+
+/*table style: timetable */
+table#time_table{
+    box-shadow: black 3px -2px 10px;
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    max-width: 1200px;
+}
+table#time_table caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 1.5em;
+    padding-bottom: 0.5%;
+}
+table#time_table th{
+    background-color: rgba(70, 125, 244, 0.78);
+}
+table#time_table th,table#time_table td {
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+table#time_table tfoot td{
+    border: none;
+    text-align: unset;
+}
+
+/* highlight today's time table*/
+table#time_table tr#today{
+   color: rgb(51, 51, 51);
+   background-color: rgb(251, 203, 176);
+   box-shadow: black 3px -1px 15px;
+ 
+}
+
+/* timetable col group style */
+col#dayCol {
+    width: 3%;
+}
+
+col.timeCol {
+    width:5%;
+}
+
+
+/* main style: my ex in sp */
+body h1#myExp{
+    background-color: rgb(218, 174, 85);
+    box-shadow: black 3px -1px 10px;
+}
+.tab-content{
+    background-color: rgba(223, 200, 155,0.78);
+    box-shadow: black 3px -1px 10px;
+}
+
+body div#gallery{
+    max-width: 500px;
+    box-shadow: black 3px -1px 10px;
+}
+body div.carousel-item figure{
+    height: 500px;
+    max-width: auto;
+}
+body div#gallery figure img{
+    max-height: 400px;
+    max-width: 334px;
+    margin-left: 15%;
+}
+
+
+
+
+

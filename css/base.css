@@ -1,0 +1,66 @@
+/* 
+Author: Angel Chey Ee Zia
+Date: 2 Aug 2022 
+
+Filename: base.css     
+
+Use to create styles ehich is common for all 4 pages
+*/
+
+/* bosy style */
+body{
+    /* background img downloaded from: https://pngtree.com/freebackground/green-texture-roll-paper-flip-willow-leaf-son-willow-branch-geometry-shuimo-mountain-background_1610058.html */
+    background-image: url(../footerHeaderPic/background.png);
+    background-size: cover;
+    opacity: 0.9;
+    font-size: 1.1em;
+}
+
+/* typography */
+p, td, a{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.2em;
+    margin-bottom: 30px;
+}
+h1, table caption, ul.careerOpt > li{
+    font-family: 'Bad Script', cursive;
+}
+
+/* short intro style */
+body button#shInBtn{
+    background: linear-gradient(rgb(233, 214, 105),rgb(113, 210, 170));
+    box-shadow: black 5px -3px 10px;
+}
+body button#shInBtn:hover{
+    background: linear-gradient(rgb(253, 95, 95),rgb(192, 18, 18));
+    transform: scale(0.95,0.95);
+}
+body div#shortIntro p{
+    background-color: bisque;
+    border-radius: 25px;
+    width: 400px;
+    border: 7px double rgb(98, 234, 216);
+    box-shadow: black 3px -3px 7px;
+}  
+
+/* typing style */
+div.typewriting{
+    max-width: 450px;
+    height: 150px;
+    margin-right: 20%;
+    font-size: 1.2em;
+}
+
+/* show more show less style */
+#more,#more2,#more3,#more4 {
+    display: none;
+}
+#showBtn, #showBtn2,#showBtn3,#showBtn4{
+    background: linear-gradient(25deg, rgba(0, 255, 195, 0.5),rgba(93, 56, 241, 0.5));
+    box-shadow: black 1px -1px 10px;
+}
+#showBtn:hover, #showBtn2:hover,#showBtn3:hover,#showBtn4:hover{
+    transform: scale(0.95,0.95);
+}
+
+

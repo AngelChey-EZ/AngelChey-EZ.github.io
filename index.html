@@ -1,0 +1,523 @@
+<!-- 
+Author: Angel Chey Ee Zia
+Date: 2 Aug 2022 
+
+Filename: index.html     
+
+Use to create first page of website: About Me 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Angel's Career Prospect</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/headerFooter.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <!-- link js -->
+    <script src="./js/typing.js" defer></script>
+    <script src="./js/textReadMore.js" defer></script>
+    <script src="./js/myProfile.js" defer></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+
+            <!-- navigation -->
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+                <div class="container-fluid">
+
+                    <!-- buttonn to open sidebar when screen is small -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#headerNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" id="headerNavbar">
+
+                        <div class="offcanvas-header">
+                            <h1 class="offcanvas-title">Links</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+
+                                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                                    <li><a class="nav-link active " href="index.html">About Me</a></li>
+                                </div>
+
+                                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                                    <li><a class="nav-link" href="./html/myExperienceInSP.html">My Experience in SP</a>
+                                    </li>
+                                </div>
+
+                                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                                    <li><a class="nav-link" href="./html/myCareerOption.html">My Career Option</a></li>
+                                </div>
+
+                                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                                    <li><a class="nav-link" href="./html/feedbackToMe.html">Feedback to Me</a></li>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+            <!-- logo img: logo made from canvas-->
+            <img class="img-fluid mt-5" src="./footerHeaderPic/headerIMG.png" alt="Angel's Career Prospect">
+
+            <h1 class="d-flex justify-content-center mt-5 pb-3 display-2">About Me</h1>
+        </header>
+
+        <div class="row ">
+            <!-- short intro -->
+            <div class="container-fluid col-md">
+                <button id="shInBtn" type="button" class="btn-lg mx-5 mt-3" aria-expanded="false"
+                    aria-controls="shortIntro" data-bs-toggle="collapse" data-bs-target="#shortIntro">Click
+                    me to see Short Intro</button>
+                <div id="shortIntro" class="collapse">
+                    <p class="p-3 mt-2">
+                        Hi! I am Angel! This is my first personal web page about my career prospect.
+                        This is the first page of my web page which introduces myself.
+                    </p>
+                </div>
+            </div>
+
+            <!-- greeting -->
+            <div class="col-md container-fluid typewriting">
+                <div id="runclock" class=" mt-3"></div>
+
+                <p id="typewrite"> </p>
+            </div>
+        </div>
+
+
+
+        <!-- card: my info, photo scr: my gallery -->
+        <div class="container-fluid mt-5 d-flex justify-content-center">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4 class="card-title">My Info</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="card-img" src="./page1Pic/myProfilePic.jpg" alt="My Profile Picture"
+                            style="width:100%">
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="card-body">
+                            <p class="card-text" id="myProfile">
+                                <!-- js fill in -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- value, personality, interest, background -->
+        <main class="container-fluid">
+            <h1 class="py-1 d-flex justify-content-center mt-5">More About Me</h1>
+
+            <div class="row">
+                <article class="col-xxl col-lg-6 col-12">
+                    <!-- my background -->
+                    <h4 class="py-1 mt-3 d-flex justify-content-center">My backgroumd</h4>
+                    <p>
+                        I was born in Malaysia, and was studying in Malaysia until
+                        primary 3, then I was sent to Singapore to study primary
+
+                        <span id="dots">...</span>
+                        <span id="more">4 by
+                            my parents. This is how the story goes: One fine day, my mother
+                            ask me if I would like to go to Singapore to study. I answered
+                            her, “Sure!” And the story ended. My reason for studying in
+                            Singapore is because I do not want to learn Malay as I am
+                            struggling with it.
+
+                            <br>
+                            <br>
+
+                            Fortunately, I had a good tutor in Malaysia who taught how to
+                            study effectively. This make my study much easier for subjects
+                            like science and maths. However, I struggled for my English due
+                            to the big difference in standard of English. And now, after so
+                            many years of studying, I am still struggling with it.
+                    </p></span>
+                    <button class="btn border " onclick="showMoreShowLess('dots','more','showBtn')" id="showBtn">Show
+                        More</button>
+                </article>
+
+                <article class="col-xxl col-lg-6 col-12">
+                    <!-- interest -->
+                    <h4 class="py-1 mt-3 d-flex justify-content-center">My interest</h4>
+                    <p>
+                        I am a sporty person, at the same time, also a lazy person.
+                        Despite loving to do sports, I am way too lazy to do sports
+                        by myself.
+                        <span id="dots2">...</span>
+                        <span id="more2">
+                            Thus, I would always join sports CCA and be
+                            very active during training or PE lesson.
+
+                            <br>
+                            <br>
+                            I like to watch anime, especially Doraemon movies. Their movies
+                            are good, you should watch it too. However, I did not watch
+                            anime frequently as I am too lazy. Yes! I am a lazy person.
+                            I am too lazy to start watching but when I start watching I
+                            could not stop watching. Thus, not watching is the best solution.
+                        </span>
+                    </p>
+                    <button class="btn border " onclick="showMoreShowLess('dots2','more2','showBtn2')"
+                        id="showBtn2">Show More</button>
+                </article>
+
+                <article class="col-xxl col-lg-6 col-12">
+                    <!-- my values -->
+                    <h4 class="py-1 mt-3 d-flex justify-content-center">My Value</h4>
+                    <p>
+                        I believe that if you want someone to respect and value you, you
+                        musty first respect and value yourself. If you yourself think
+                        <span id="dots3">...</span>
+                        <span id="more3">
+                            low about yourself, no one will think you are good. Thus, even though I
+                            know that I am not a genius, I always tell myself that I am smart,
+                            and I can achieve anything if I put enough effort and time. This
+                            is what drive me throughout the years.
+                            <br>
+                            <br>
+                            Another value that shape me as a person is being myself. Our life
+                            is short, thus enjoy being who you are. No point to be someone you
+                            don't know just to make others happy. Although I still take other
+                            people's comments about me to heart, and care about what people
+                            thought of me, I believe that along my journey of adulting, I could
+                            grow to be a strong and confident person.
+                        </span>
+                    </p>
+                    <button class="btn border" onclick="showMoreShowLess('dots3','more3','showBtn3')" id="showBtn3">Show
+                        More</button>
+                </article>
+
+                <article class="col-xxl col-lg-6 col-12">
+                    <!-- my personality -->
+                    <h4 class="py-1 mt-3 d-flex justify-content-center">My Personality</h4>
+                    <p>
+                        As I said earlier, I am a lazy person. At the same time,
+                        also a hardworking person. I take time to have the motivation
+                        to start
+                        <span id="dots4">...</span>
+                        <span id="more4">work, but once I start work, I will be very focus
+                            and really immersed into it. When there is work, I always
+                            make sure that I start early so that I could finish it
+                            early and enjoy the rest of the time while others are
+                            still trying to finish up their work.I am a very focus
+                            person. Thus, I am not able to do multitasking. The advantage
+                            of it is that I would focus on doing one thing at a time,
+                            and give my best into it.
+                    </p>
+                    <button class="btn border" onclick="showMoreShowLess('dots4','more4','showBtn4')" id="showBtn4">Show
+                        More</button>
+                </article>
+            </div>
+            <figure class="d-flex">
+                <img class="mx-auto d-none d-sm-block" src="./page1Pic/interestSport.png" alt="Sports">
+                <!--scr: https://www.flaticon.com/premium-icon/balls-sports_5540420?term=sports&page=1&position=22&page=1&position=22&related_id=5540420&origin=search-->
+                <img class="mx-auto d-none d-sm-block" src="./page1Pic/interestBmt.png" alt="Badminton">
+                <!--scr: https://www.flaticon.com/premium-icon/badminton_1949985?term=badminton&page=1&position=22&page=1&position=22&related_id=1949985&origin=search-->
+                <img class="mx-auto " src="./page1Pic/interestTennis.png" alt="Tennis">
+                <!-- scr: https://www.flaticon.com/premium-icon/tennis_3969620?term=tennis&page=1&position=22&page=1&position=22&related_id=3969620&origin=search -->
+                <img class="mx-auto " src="./page1Pic/interestDoraemon.png" alt="Doraemon">
+            </figure>
+        </main>
+
+        <!-- my gallery, photo scr: my own gallery-->
+        <aside>
+            <h1 class="py-1 d-flex justify-content-center mt-5">My Gallery</h1>
+            <div class="row container-fluid">
+                <div class="col-lg">
+                    <!-- Portrait Carousel -->
+                    <div id="portCarousel" class="carousel slide container-fluid justify-content-center mt-3"
+                        data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators bg-dark">
+                            <button type="button" data-bs-target="#portCarousel" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#portCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#portCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#portCarousel" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#portCarousel" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#portCarousel" data-bs-slide-to="5"></button>
+                            <button type="button" data-bs-target="#portCarousel" data-bs-slide-to="6"></button>
+                            <button type="button" data-bs-target="#portCarousel" data-bs-slide-to="7"></button>
+                        </div>
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <figure>
+                                    <img src="./page1Pic/port1.jpg" alt="Childhood photo">
+                                    <figcaption class="mt-2 text-center">My Childhood Photo</figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item ">
+                                <figure>
+                                    <img src="./page1Pic/port2.jpg" alt="speech to junior ">
+                                    <figcaption class="mt-2 text-center">Inspiring speech to junior during Sec 4
+                                        CCA
+                                        step down</figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/port3.jpg" alt="gift from coach">
+                                    <figcaption class="mt-2 text-center">Gift from coach during Sec 4 CCA step
+                                        down
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/port3-1.jpg" alt="after PE">
+                                    <figcaption class="mt-2 text-center">Sleepy days after PE</figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/port4.jpg" alt="group photo on graduation day">
+                                    <figcaption class="mt-2 text-center">Group photo with lower sec classmates
+                                        during
+                                        sec 4 graduation day</figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/port5.jpg" alt="havin o level">
+                                    <figcaption class="mt-2 text-center">Days having "O" levels</figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/port6.jpg" alt="hang out with friends">
+                                    <figcaption class="mt-2 text-center">Hanging out with friend after "O"
+                                        levels
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/port7.jpg" alt="hang out with brother">
+                                    <figcaption class="mt-2 text-center">Riding bicycle and explore Singapore
+                                        with my
+                                        brother</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#portCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next bg-dark" type="button" data-bs-target="#portCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg">
+                    <!-- landscape carousel -->
+                    <div id="landscapeCarousel" class="carousel slide container-fluid justify-content-center mt-3"
+                        data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators bg-dark">
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="5"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="6"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="7"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="8"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="9"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="10"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="11"></button>
+                            <button type="button" data-bs-target="#landscapeCarousel" data-bs-slide-to="12"></button>
+                        </div>
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <figure>
+                                    <img src="./page1Pic/landscape1.jpg" alt="sec sch CCA group photo">
+                                    <figcaption class="mt-2 text-center">Secondary school CCA group photo with
+                                        teacher
+                                        <br> who going to leave the school
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item ">
+                                <figure>
+                                    <img src="./page1Pic/landscape2.jpg" alt="sec 4 start of year event">
+                                    <figcaption class="mt-2 text-center">Start of year event at the start of sec
+                                        4 <br>
+                                        (build your desire school)</figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape2-1.jpg" alt="NTU trip">
+                                    <figcaption class="mt-2 text-center">Trip to NTU with classmates at the
+                                        start of sec
+                                        4</figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape3.jpg" alt="school game">
+                                    <figcaption class="mt-2 text-center">Sec 4 shool game group photo
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape3-1.jpg" alt="cheering during school game">
+                                    <figcaption class="mt-2 text-center">Cheering photo during sec 4 school game
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape4.jpg" alt="group photo before competition">
+                                    <figcaption class="mt-2 text-center">Group photo before competition
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape5.jpg" alt="CCA sec 4 group photo">
+                                    <figcaption class="mt-2 text-center">CCA sec 4 group photo after competition
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape6.jpg" alt="CCA step down wellfair">
+                                    <figcaption class="mt-2 text-center">Sec 4 CCA step down wellfair
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape7.jpg" alt="graduation day class photo">
+                                    <figcaption class="mt-2 text-center">Class photo during graduation day
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape8.jpg" alt="CCA leaders graduation day photo">
+                                    <figcaption class="mt-2 text-center">Photo with fellow sec 4 CCA leaders
+                                        during
+                                        graduation day</figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape8-1.jpg" alt="play badminton after o level">
+                                    <figcaption class="mt-2 text-center">Playing badminton with friends after
+                                        "O" level
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape9.jpg" alt="concert class photo">
+                                    <figcaption class="mt-2 text-center">Class photo after "O" level <br> Going
+                                        back to
+                                        secondary school to watch concert </figcaption>
+                                </figure>
+                            </div>
+                            <div class="carousel-item">
+                                <figure>
+                                    <img src="./page1Pic/landscape10.jpg" alt="concert photo with friends">
+                                    <figcaption class="mt-2 text-center">Group photo with friends after "O"
+                                        level <br>
+                                        Going back to secondary school to watch concert </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#landscapeCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next bg-dark" type="button" data-bs-target="#landscapeCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- footer -->
+        <footer class="mt-3 px-3 pt-2">
+            <div class="container-fluid">
+                <h1>Contact Me</h1>
+                <div class="row">
+                    <!-- emails -->
+                    <nav class="container-fluid col-md" id="emails">
+                        <h2>Emails:</h2>
+                        <p> Private Email: &nbsp; &nbsp;<a class="text-decoration-none"
+                                href="mailto:angelchey22@gmail.com">angelchey22@gmail.com</a>
+                            <br>
+                            School Email: &nbsp; &nbsp;<a class="text-decoration-none"
+                                href="mailto:ANGELCHEY.22@ichat.sp.edu.sg">ANGELCHEY.22@ichat.sp.edu.sg</a>
+                        </p>
+                    </nav>
+                    <!-- social media -->
+                    <nav class="container-fluid pb-3 col-md" id="socials">
+                        <h2 class="pb-1">Socials:</h2>
+                        <a class="px-3" href="https://twitter.com/As_Career_P"><img class="img-fluid"
+                                src="./footerHeaderPic/twitterLogo.png" alt="Twitter Link"></a>
+                        <a class="px-3" href="https://www.facebook.com/profile.php?id=100081528939759"><img
+                                class="img-fluid" src="./footerHeaderPic/facebook-logo.png" alt="Facebook Link"></a>
+                        <a class="px-3" href="https://www.tiktok.com/@as_career_p?lang=en"><img class="img-fluid"
+                                src="./footerHeaderPic/tiktok.png" alt="Tik Tok Link"></a>
+                        <a class="px-3" href="https://www.instagram.com/as_career_prospect/"><img class="img-fluid"
+                                src="./footerHeaderPic/instagram-logo.png" alt="Instagram Link"></a>
+
+                        <!-- 
+                        twitter logo taken from: https://www.iconfinder.com/icons/5282551/tweet_twitter_twitter_logo_icon
+                        facebook logo taken from: flaticon.com/free-icon/facebook-logo_61045
+                        tiktok logo taken from: https://www.flaticon.com/premium-icon/tiktok_2504942?term=tiktok&page=1&position=7&page=1&position=7&related_id=2504942&origin=search
+                        instagram logo taken from: https://www.flaticon.com/free-icon/instagram-logo_87390 
+                    -->
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+
+</html>

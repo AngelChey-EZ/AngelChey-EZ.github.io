@@ -1,0 +1,81 @@
+/* 
+Author: Angel Chey Ee Zia
+Date: 2 Aug 2022 
+
+Filename: style1.css     
+
+Use to create styles for last page of website: Feddback to Me 
+*/
+
+
+/* My info style */
+body div.card{
+    max-width: 700px;
+    background-color: lemonchiffon;
+    box-shadow: black 2px -1px 7px;
+}
+
+body div.card div.card-header{
+    background-color: rgb(225, 214, 165);
+    
+}
+
+/* main style: value personality interest and background */
+
+body main > h1{
+    background-color: rgb(218, 174, 85);
+    box-shadow: black 3px -1px 10px;
+}
+
+body main h4{
+    background-color: rgb(223, 200, 155);
+    box-shadow: black 3px -1px 10px;
+}
+body main figure img{
+    max-width: 150px;
+    max-height: 150px;
+    margin: 0px 20px;
+}
+
+
+/* carousel style: my gallery */
+aside > h1 {
+    background-color: rgb(218, 174, 85);
+    box-shadow: black 3px -1px 10px;
+}
+body div#portCarousel, body div#landscapeCarousel{
+    max-width: 500px;
+    box-shadow: black 3px -1px 10px;
+}
+body div.carousel-item figure{
+    height: 530px;
+    width: auto;
+}
+body div#portCarousel figure img{
+    height: 448px;
+    width: 334px;
+    margin-left: 20%;
+}
+body div#landscapeCarousel figure img{
+    height: 448px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

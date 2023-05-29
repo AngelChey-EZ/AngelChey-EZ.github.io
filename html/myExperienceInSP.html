@@ -1,0 +1,566 @@
+<!-- 
+Author: Angel Chey Ee Zia
+Date: 2 Aug 2022 
+
+Filename: myExperienceInSP.html     
+
+Use to create second page of website: My Expereince in SP
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>My Experience in SP</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/headerFooter.css">
+  <link rel="stylesheet" href="../css/style2.css">
+  <!-- link js -->
+  <script src="../js/typing.js" defer></script>
+  <script src="../js/timetable.js" defer></script>
+  <script src="../js/textReadMore.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+        <div class="container-fluid">
+
+          <!-- buttonn to open sidebar when screen is small -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#headerNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-start" id="headerNavbar">
+
+            <div class="offcanvas-header">
+              <h1 class="offcanvas-title">Links</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+
+                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                  <li><a class="nav-link" href="../index.html">About Me</a></li>
+                </div>
+
+                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                  <li><a class="nav-link active" href="myExperienceInSP.html">My Experience in SP</a></li>
+                </div>
+
+                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                  <li><a class="nav-link" href="myCareerOption.html">My Career Option</a></li>
+                </div>
+
+                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                  <li><a class="nav-link" href="feedbackToMe.html">Feedback to Me</a></li>
+                </div>
+
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+
+      <!-- logo img: logo made from canvas-->
+      <img class="img-fluid mt-5" src="../footerHeaderPic/headerIMG.png" alt="Angel's Career Prospect">
+
+      <h1 class="d-flex justify-content-center mt-5 pb-3 display-2">My Experience in SP</h1>
+    </header>
+
+
+    <div class="row mt-4 ">
+      <!-- short intro -->
+      <div class="container-fluid col-md">
+        <button id="shInBtn" type="button" class="btn-lg mx-5 mt-3" aria-expanded="false" aria-controls="shortIntro"
+          data-bs-toggle="collapse" data-bs-target="#shortIntro">Click
+          me to see Short Intro</button>
+        <div id="shortIntro" class="collapse">
+          <p class="p-3 mt-2">
+            Hi! I am Angel! This is my first personal web page about my career prospect.
+            I am currently studying Diploma in Applied AI and Analytics(DAAA) in School
+            of Computing(SOC) of Singapore Polytechnic(SP). This is the second page of
+            my web page which shares my experience in SP.
+          </p>
+        </div>
+      </div>
+
+      <!-- greeting -->
+      <div class="col-md container-fluid typewriting">
+        <div id="runclock" class=" mt-3"></div>
+
+        <p id="typewrite"></p>
+      </div>
+    </div>
+
+    <!--introducing sp and soc-->
+    <section class="container-fluid" id="school">
+      <h1 class="d-flex justify-content-center mt-5 py-1">About My School</h1>
+
+      <div class="row">
+        <article class="col-sm">
+          <!-- about SP-->
+          <h4 class="mt-3 d-flex justify-content-center py-1">About SP</h4>
+          <p>
+            Singapore Polytechnic was set up in 1954, and it is the first polytechnic
+            to be established in Singapore.
+            SP offers courses across a wide variety of
+            industries, includes
+            <span id="dots">...</span>
+            <span id="more"> architecture and the built environment, business,
+              computing, sciences, engineering, life skills & communication, mathematics
+              and science, media, arts & design, mechanical and aeronautical engineering,
+              maritime academy,with over 220 000 graduates.
+              <br>
+              <br>
+              SP may be the oldest Polytechnic, but the pioneering spirit is kept very
+              much alive. SP ensures its builiding and facilities are always up-to-date and well-equipped
+              for training students in the new industries and emerging technologies.
+            </span>
+          </p>
+
+          <button class="btn border " onclick="showMoreShowLess('dots','more','showBtn')" id="showBtn">Show More
+          </button>
+
+          <br>
+
+          <a class="links d-flex mt-3" href="https://www.sp.edu.sg/">
+            >>click me to learn more
+          </a>
+        </article>
+
+        <article class="col-sm">
+          <!--about soc-->
+          <h4 class="py-1 mt-3 d-flex justify-content-center">About SOC</h4>
+          <p>
+            SP's school of computing is equipped with more than 950 Windows and Macintosh
+            workstations in our studios, to support the different training requirements
+            <span id="dots2">...</span>
+            <span id="more2">
+            of our diploma courses. These workstations are equipped with application
+            software, popular programming/development tools, as well as hardware like
+            DVD writers, and media card readers, etc. Our studios are also equipped with
+            peripheral devices such as scanners, colour printers, multimedia accessories,
+            and are linked via Local Area Networks running on Windows and TCP/IP.
+          <br>
+          <br>
+            SP's SOC is prepared to train students in the industry of computing tachnology.
+          </p>
+
+          <button class="btn border " onclick="showMoreShowLess('dots2','more2','showBtn2')" id="showBtn2">Show More
+          </button>
+
+          <br>
+
+          <a class="links d-flex mt-3" href="https://www.sp.edu.sg/soc">
+            >>click me to learn more
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- introducing courses in SOC (accordion)-->
+    <div class="container-fluid">
+      <!-- Courses in SOC -->
+      <section class="mt-3">
+        <h1 class="d-flex justify-content-center mt-5 py-1">Courses in SOC</h1>
+        <div class="row container-fluid">
+
+          <div class="col-xl-8">
+            <div id="accordion" class=" mt-3">
+              <!-- courses photos taken from sp website -->
+              <!-- DAAA -->
+              <div class="card">
+                <div class="card-header">
+
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#daaa">
+                    DAAA &emsp;&#8810;--click me to see more about the course&ensp;&ensp;&ensp;
+                  </a>
+
+                  <a class="links"
+                    href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics/overview">
+                    >>click me to learn more
+                  </a>
+
+                </div>
+                <div id="daaa" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body row">
+                    <figure class="col-lg-4">
+                      <img class="img-fluid " src="../page2Pic/daaa.jpg" alt="daaa image">
+                    </figure>
+                    <p class="col-lg-8">
+                      In this fast changing world, the advanced in technology will make AI become
+                      an integral part of our life. Diploma in Applied AI and Analytics (DAAA),
+                      is designed with a useful and relevant curriculum that imparts students with
+                      important skills to contribute to the workforce in the AI and Analytics domain.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- DCITP -->
+              <div class="card ">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                    DCITP &emsp;&#8810;--click me to see more about the course&ensp;&ensp;&ensp;
+                  </a>
+
+                  <a class="links"
+                    href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme/overview">
+                    >>click me to learn more
+                  </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body row">
+                    <figure class="col-lg-4">
+                      <img class="img-fluid" src="../page2Pic/dcitp.jpg" alt="dcitp image">
+                    </figure>
+                    <p class="col-lg-8">
+                      Common ICT programme (DCITP) is best suited for students who are passionate
+                      about Information Technology (IT) but undecided about which IT course to take.
+                      This course is designed to give students a broad
+                      introduction to the Info comm landscape and help them gain insights into the
+                      occupations and job roles, career pathways and employment opportunities in
+                      the various Info comm sectors. DCITP helps students to build a strong foundation
+                      in programming and IT fundamental. When semester 1 of year 1 had ended, students
+                      will need to choose either DAAA, DISM or DIT.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- DISM -->
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                    DISM &emsp; &#8810;--click me to see more about the course&ensp;&ensp;&ensp;
+                  </a>
+                  <a class="links"
+                    href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/infocomm-security-management">
+                    >>click me to learn more
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body row">
+                    <figure class="col-lg-4">
+                      <img class="img-fluid" src="../page2Pic/dism.jpg" alt="dism image">
+                    </figure>
+                    <p class="col-lg-8">
+                      Diploma in Infocomm Security Management (DISM) gives
+                      students the competitive edge for a boost in their
+                      future studies and career. Its interesting curriculum
+                      covers offensive attacks, defensive methods and investigative
+                      skills to keep the cyber world safe. The DISM curriculum
+                      covers the important areas of security technology, security
+                      management, information technology, law and teamwork and
+                      communications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- DIT -->
+              <div class="card">
+                <div class="card-header">
+                  <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                    DIT &emsp;&emsp; &#8810;--click me to see more about the course&ensp;&ensp;&ensp;
+                  </a>
+                  <a class="links" href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology">
+                    >>click me to learn more
+                  </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                  <div class="card-body row">
+                    <figure class="col-lg-4">
+                      <img class="img-fluid" src="../page2Pic/dit.jpg" alt="dit image">
+                    </figure>
+                    <p class="col-lg-8">
+                      Diploma in Information Technology (DIT) is positioned to
+                      focus on Software & Applications development with three
+                      specialist tracks, Software Development, User Experience (UX)
+                      and Immersive Simulation. The course work closely with
+                      industry leaders when designing their pedagogy, and in
+                      building learning facilities. Their students will have
+                      opportunities to work with leading industry companies
+                      such as Microsoft, Accenture, GovTech, and others more
+                      through internship opportunities and project collaborations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- course info table (bootstrap)-->
+            <table id="courseInfo" class="container-fluid table table-hover justify-content-center order-3 mt-5">
+              <thead>
+                <tr class="text-center h4">
+                  <th>Course</th>
+                  <th>Planned Intake</th>
+                  <th>Range of Net JAE ELR2B2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="text-center">
+                  <td>DAAA</td>
+                  <td>80</td>
+                  <td>3-8</td>
+                </tr>
+                <tr class="text-center">
+                  <td>DCITP</td>
+                  <td>165</td>
+                  <td>3-13</td>
+                </tr>
+                <tr class="text-center">
+                  <td>DISM</td>
+                  <td>120</td>
+                  <td>4-11</td>
+                </tr>
+                <tr class="text-center">
+                  <td>DIT</td>
+                  <td>160</td>
+                  <td>4-14</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3">*Information based on 2022</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <!-- cute robot -->
+          <figure id="cuteRobot" class="col-xl-4 d-flex justify-content-end my-auto ">
+
+            <p>Hi! I am Little Cute Robot. Nice to meet you. Tell you a secret, courses in SOC are really fun and
+              interesting!
+            </p>
+            <!-- src: https://www.seekpng.com/idown/u2e6t4w7r5r5o0y3_the-cute-robot-robot/ -->
+            <img class="img-fluid" src="../page2Pic/cute_robot.png" alt="cute-robot">
+
+          </figure>
+
+        </div>
+
+      </section>
+    </div>
+
+    <!-- timetable done by js -->
+    <div id="timetable" class="container-fluid table table-hover d-flex justify-content-center"></div>
+
+    <h1 id="myExp" class="py-1 d-flex justify-content-center mt-5">About My Experience</h1>
+
+    <div class="row">
+      <!-- mian: my exp in sp (tab)-->
+      <main class="container-fluid my-auto col-lg">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#whatIStudying">What am I studying</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#cca">CCA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#enrichProg">Enrichment Programme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#comp">Competition</a>
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content pb-3">
+          <div id="whatIStudying" class="container tab-pane active"><br>
+            <h3>What am I studying</h3>
+            <p>
+              I am currently at year 1 semester 1, and I am learning
+              6 modules. These modules include Communicating for
+              Project (Proposal) Effectiveness, Critical and Analytical
+              Thinking (CAT), Mathematics, Education and Career Guidance 1:
+              Personal Development, Front-End Web Development, Fundamentals
+              of Programming, Fundamentals of Computing. From these
+              modules, I will improve my communication skills, learn
+              computing maths, explore different careers and further
+              studies path, learn how to create a web page from scratch,
+              learn how a computer work and learn the fundamental of
+              programming.
+            </p>
+          </div>
+          <div id="cca" class="container tab-pane fade"><br>
+            <h3>CCA</h3>
+            <p>
+              As I have said earlier on my first page, I AM A LAZY PERSON!!!
+              Thus, in order for my to remain fit, I have to join a sport
+              CCA. I went for trail for 2 sports during the second week of
+              school. 1 of them is badminton, which I have been playing for
+              years, and it is also my secondary CCA. Another one is tennis,
+              which I am really interested in.
+            </p>
+            <p>
+              On the day of badminton trial, they told me that they will reply
+              me on that night, but guess what? Till now, week 15, they have not
+              contacted me!
+            </p>
+            <p>
+              While the good thing is, tennis had replied me and accepted me.
+              My training day falls on Wednesday, from 5pm to 6:30pm. The
+              reason of such a short training section is that the team is focusing
+              on training the seniors who will soon have competition. Overall,
+              the training is fun,the seniors and coach are nice and fun. I have
+              attended training section for about 2 to 3 month, and I have really
+              learn quite a lot of things.
+            </p>
+            <p>
+              Just wondering whenbadminton will reply me, or maybe they had
+              rejected me.
+            </p>
+          </div>
+          <div id="enrichProg" class="container tab-pane fade"><br>
+            <h3>Enrichment Programme</h3>
+            <p>
+              SP had conducted many enrichment programmes for students to
+              participant. These programmes are usually focuses on areas
+              like healthy lifestyle, mental well-being, coping with stress
+              and study tips. Some of the programme that I have attended
+              is the “Level Up your relational and emotional game”, “Sugar
+              Addict Talk”, “Learn how to play tennis”, “How to ACE your
+              FOP” and others more. These programme allows me to learn how
+              to take care of myself better and also gain some knowledge
+              that is not taught by school.
+            </p>
+          </div>
+          <div id="comp" class="container tab-pane fade"><br>
+            <h3>Competition</h3>
+            <p>
+              SP provides us many competition opportunities to showcase
+              our skills and talent. This allows us to explore the world
+              outside class, and compete against many other teenagers age
+              like us. Participating competition could build up our portfolio,
+              and also grow and learn new things during the competition.
+              I have not participated any competition yet.
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- gallery (carousel)-->
+      <div id="gallery" class="carousel slide container-fluid justify-content-center mt-3 col-lg"
+        data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators bg-dark">
+          <button type="button" data-bs-target="#gallery" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#gallery" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#gallery" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#gallery" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#gallery" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#gallery" data-bs-slide-to="5"></button>
+          <button type="button" data-bs-target="#gallery" data-bs-slide-to="6"></button>
+        </div>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <figure>
+              <img src="../page2Pic/gallery1.jpg" alt="Childhood photo">
+              <figcaption class="mt-2 text-center">First class photo</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item ">
+            <figure>
+              <img src="../page2Pic/gallery2.jpg" alt="speech to junior ">
+              <figcaption class="mt-2 text-center">Friends took a selfie using my phone</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure>
+              <img src="../page2Pic/gallery3.jpg" alt="gift from coach">
+              <figcaption class="mt-2 text-center">Friends took another selfie using my phone
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure>
+              <img src="../page2Pic/gallery4.jpg" alt="after PE">
+              <figcaption class="mt-2 text-center">Wefie during class bounding</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure>
+              <img src="../page2Pic/gallery5.jpg" alt="group photo on graduation day">
+              <figcaption class="mt-2 text-center">Another wefie during class bounding</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure>
+              <img src="../page2Pic/gallery6.jpg" alt="havin o level">
+              <figcaption class="mt-2 text-center">A selfie when doing project work for CPR</figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item">
+            <figure>
+              <img src="../page2Pic/gallery7.jpg" alt="hang out with friends">
+              <figcaption class="mt-2 text-center">Sketch of our CPR team, done by Ing <br> (the one at the most right)
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next bg-dark" type="button" data-bs-target="#gallery" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="mt-3 px-3 pt-2">
+      <div class="container-fluid">
+        <h1>Contact Me</h1>
+        <div class="row">
+          <!-- email -->
+          <nav class="container-fluid col-md" id="emails">
+            <h2>Emails:</h2>
+            <p> Private Email: &nbsp; &nbsp;<a class="text-decoration-none"
+                href="mailto:angelchey22@gmail.com">angelchey22@gmail.com</a>
+              <br>
+              School Email: &nbsp; &nbsp;<a class="text-decoration-none"
+                href="mailto:ANGELCHEY.22@ichat.sp.edu.sg">ANGELCHEY.22@ichat.sp.edu.sg</a>
+            </p>
+          </nav>
+          <!-- social media -->
+          <nav class="container-fluid pb-3 col-md" id="socials">
+            <h2 class="pb-1">Socials:</h2>
+            <a class="px-3" href="https://twitter.com/As_Career_P"><img class="img-fluid"
+                src="../footerHeaderPic/twitterLogo.png" alt="Twitter Link"></a>
+            <a class="px-3" href="https://www.facebook.com/profile.php?id=100081528939759"><img class="img-fluid"
+                src="../footerHeaderPic/facebook-logo.png" alt="Facebook Link"></a>
+            <a class="px-3" href="https://www.tiktok.com/@as_career_p?lang=en"><img class="img-fluid"
+                src="../footerHeaderPic/tiktok.png" alt="Tik Tok Link"></a>
+            <a class="px-3" href="https://www.instagram.com/as_career_prospect/"><img class="img-fluid"
+                src="../footerHeaderPic/instagram-logo.png" alt="Instagram Link"></a>
+
+            <!-- 
+                  twitter logo taken from: https://www.iconfinder.com/icons/5282551/tweet_twitter_twitter_logo_icon
+                  facebook logo taken from: flaticon.com/free-icon/facebook-logo_61045
+                  tiktok logo taken from: https://www.flaticon.com/premium-icon/tiktok_2504942?term=tiktok&page=1&position=7&page=1&position=7&related_id=2504942&origin=search
+                  instagram logo taken from: https://www.flaticon.com/free-icon/instagram-logo_87390 
+              -->
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

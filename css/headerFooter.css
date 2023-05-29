@@ -1,0 +1,84 @@
+/* 
+Author: Angel Chey Ee Zia
+Date: 2 Aug 2022 
+
+Filename: headerFooter.css     
+
+Use to create styles for header and footer
+*/
+
+/* add shodow to header img */
+body header img{
+    box-shadow: black 0px 0px 7px;
+}
+
+
+/* nav style */
+body  header > nav {
+    background-color: rgba(255, 168, 0, 1);
+    box-shadow: black 0px 0px 7px;
+    max-height: 110px;
+}
+
+body  header > nav div.offcanvas-body{
+    background-color: rgba(255, 168, 0, 0.7); 
+}
+
+body  header > nav div.offcanvas-header{
+    background-color: rgba(46, 43, 39, 0.7); 
+    box-shadow: black 0px 2px 20px;
+}
+
+body header > nav div.offcanvas-body ul li a:hover{
+    background-color: rgb(159, 109, 10);
+    transform: translateY(15px);
+    border-radius: 20px;
+ }  
+ body header > nav ul li a.active{
+    background-color: burlywood;
+    box-shadow: black 0px 0px 20px;
+    border-radius: 20px;
+}
+body header > nav ul li a{
+    font-family: Champagne, cursive;
+    transform: translateY(10px);
+}
+
+/* header h1 */
+body header > h1{
+    background-color: rgb(218, 174, 85);
+    box-shadow: black 3px -1px 10px;
+
+}
+
+/* footer style */
+footer{
+    background-color: rgb(244, 184, 74); 
+    box-shadow: black 3px -1px 10px;
+}
+body footer nav#socials a img{
+    height: 50px;
+    width: 50px;
+}
+body footer nav#emails p{
+    font-size: 1.2em;
+}
+body footer nav#socials a img:hover, 
+body footer nav#emails a:hover{
+    padding: 5px;
+    background-color: rgba(217, 238, 114, 0.9);
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

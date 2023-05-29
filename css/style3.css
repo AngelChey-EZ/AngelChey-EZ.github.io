@@ -1,0 +1,35 @@
+/* 
+Author: Angel Chey Ee Zia
+Date: 2 Aug 2022 
+
+Filename: style3.css     
+
+Use to create styles for third page of website: 
+my career options
+*/
+
+/* career option style */
+body div#careerScroll{
+    position: relative;
+    max-height: 500px;
+    overflow-y: scroll;
+    margin: 0 100px;
+}
+/* resize career logo */
+body div#careerScroll figure.logoImg img{
+    width: 50px;
+    height: auto;
+}
+
+/* resize career img */
+body div#careerScroll figure.careerImg img{
+    max-width: 250px;
+    height: auto;
+}
+/* positioning text */
+body div#careerScroll div.section{
+    padding: 20px;
+}
+body div#careerScroll h2{
+    margin-left: 70px;
+}

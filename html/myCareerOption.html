@@ -1,0 +1,263 @@
+<!-- 
+Author: Angel Chey Ee Zia
+Date: 2 Aug 2022 
+
+Filename: myCareerOption.html     
+
+Use to create third page of website: my career options
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>My Career Option</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/headerFooter.css">
+    <link rel="stylesheet" href="../css/style3.css">
+    <!-- link js -->
+    <script src="../js/typing.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+
+            <!-- navigation -->
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+                <div class="container-fluid">
+
+                    <!-- buttonn to open sidebar when screen is small -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#headerNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" id="headerNavbar">
+
+                        <div class="offcanvas-header">
+                            <h1 class="offcanvas-title">Links</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav">
+
+                                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                                    <li><a class="nav-link" href="../index.html">About Me</a></li>
+                                </div>
+
+                                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                                    <li><a class="nav-link" href="myExperienceInSP.html">My Experience in SP</a></li>
+                                </div>
+
+                                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                                    <li><a class="nav-link active" href="myCareerOption.html">My Career Option</a></li>
+                                </div>
+
+                                <div class="px-sm-2 px-md-4 px-lg-5 h3">
+                                    <li><a class="nav-link" href="feedbackToMe.html">Feedback to Me</a></li>
+                                </div>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+
+            <!-- logo img: logo made from canvas-->
+            <img class="img-fluid mt-5" src="../footerHeaderPic/headerIMG.png" alt="Angel's Career Prospect">
+
+            <h1 class="d-flex justify-content-center mt-5 pb-3 display-2">My Career Option</h1>
+        </header>
+
+        <div class="row ">
+            <!-- short intro -->
+            <div class="container-fluid col-md">
+                <button id="shInBtn" type="button" class="btn-lg mx-5 mt-3" aria-expanded="false" aria-controls="shortIntro"
+                    data-bs-toggle="collapse" data-bs-target="#shortIntro">Click
+                    me to see Short Intro</button>
+                <div id="shortIntro" class="collapse">
+                    <p class="p-3 mt-2" >
+                        Hi! I am Angel! This is my first personal web page about my career prospect.
+                        I am currently studying Diploma in Applied AI and Analytics(DAAA) in School 
+                        of Computing(SOC) of Singapore Polytechnic(SP). This is the third page of 
+                        my web page which shares some of my Career Options.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- greeting -->
+            <div class="col-md container-fluid typewriting">
+                <div id="runclock" class=" mt-3"></div>
+
+                <p id="typewrite"> </p>
+            </div>
+        </div>
+
+        <!-- introducing career Opt (srolling)-->
+        <div id="careerScroll" class="mt-4 " data-bs-spy="scroll" data-bs-target="#careerOpt" data-bs-offset="50">
+
+            <!-- heading -->
+            <nav id="careerOpt" class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section1">1st Option</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section2">2nd Option</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section3">3rd Option</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+             <!-- 
+        appEngiLogo downloaded from: https://www.flaticon.com/free-icon/product_5902445?term=application%20engineering&related_id=5902445
+        dataAnlyLogo downloaded from: https://www.flaticon.com/free-icon/monitor_2782058?term=data%20analytics&page=1&position=1&page=1&position=1&related_id=2782058&origin=search
+        webDevLogo downloaded from: https://www.flaticon.com/premium-icon/coding_2010990?term=web%20developer&related_id=2010990 -->
+
+            <!-- application engineering -->
+            <div id="section1" class="container-fluid bg-success text-white section">
+                <figure class="float-start logoImg">
+                    <img src="../page3Pic/AppEngiLogo.png" alt="data analytis logo">
+                </figure>
+                <h2>Application Engineering</h2>
+                <p class="pt-4">
+                    Application engineers develop customized software programs
+                    for clients. They collaborate with software development
+                    teams on software projects, design complex software programs
+                    and applications, and incorporate client feedback into
+                    software product development.
+                </p>
+                <p>
+                    The reason why I choose application engineering as my career
+                    option is because I love analysing things and solve problem.
+                    I also enjoy the process of improving things and things
+                    better for users to use.
+                </p>
+                <figure class="careerImg row">
+                    <img class="d-flex img-fluid mx-auto col " src="../page3Pic/appEngiPic1.png" alt="application engineer Pic1">
+                    <!-- img src: https://xsapbs.com/tdo-shift-left-testing/ -->
+                    <img class="d-flex img-fluid mx-auto col" src="../page3Pic/appEngiPic2.png" alt="application engineer Pic2">
+                    <!-- img src: https://www.accenture.com/us-en/services/accenture-labs/application-engineering -->
+                    <img class="d-flex img-fluid mx-auto col" src="../page3Pic/appEngiPic3.png" alt="data analysis Pic3">
+                    <!-- img scr: https://www.flaticon.com/premium-icon/engineer_3344386?related_id=3344386 -->  
+                </figure>
+            </div>
+           
+            <!-- data analytics -->
+            <div id="section2" class="container-fluid bg-warning section">
+
+                <figure class="float-start logoImg">
+                    <img src="../page3Pic/dataAnlyLogo.png" alt="data analytis logo">
+                </figure>
+                <h2>Data Analytics</h2>
+
+                <p class="pt-4">
+                    A data analyst collects and stores data on sales numbers,
+                    market research, logistics, linguistics, or other behaviours.
+                    They bring technical expertise to ensure the quality and
+                    accuracy of that data, then process, design, and present
+                    it in ways to help people, businesses, and organizations
+                    make better decisions.
+                </p>
+                <p>
+                    The reason why I choose this as my career option is
+                    because I love analysing data and organize things.
+                </p>
+                <figure class="careerImg row">
+                    <img class="d-flex img-fluid mx-auto col " src="../page3Pic/dataAnalysisPic1.png" alt="data analysis Pic1">
+                    <!-- img scr: https://www.flaticon.com/premium-icon/web-analysis_2821655 -->
+                    <img class="d-flex img-fluid mx-auto col" src="../page3Pic/dataAnalysisPic2.png" alt="data analysis Pic2">
+                    <!-- img scr: https://www.flaticon.com/premium-icon/data-analysis_2821714 -->
+                    <img class="d-flex img-fluid mx-auto col" src="../page3Pic/dataAnalyticsPic3.png" alt="data analysis Pic3">
+                    <!-- img scr: https://www.flaticon.com/premium-icon/data-analytics_2821697 -->  
+                </figure>
+            </div>
+            
+            <!-- web developer -->
+            <div id="section3" class="container-fluid bg-secondary text-white section">
+                <figure class="float-start logoImg">
+                    <img src="../page3Pic/webDevLogo.png" alt="data analytis logo">
+                </figure>
+                <h2>Web Developer</h2>
+                <p class="pt-4">
+                    Web developers build websites and ensure they perform
+                    reliably and efficiently. Their primary role is to ensure
+                    the website is visually appealing and easy to navigate,
+                    many web developers are also responsible for the website's
+                    performance and capacity. Web developers usually fall under
+                    one of three categories: back-end developers, front-end
+                    developers, and full-stack developers.
+                </p>
+                <p>
+                    The reason why I choose web developers as my career option
+                    is because I also love to do designing and creating new staff
+                    (although I do not have talent in art).
+                </p>
+                <figure class="careerImg row">
+                    <img class="d-flex img-fluid mx-auto col " src="../page3Pic/webDevPic2.png" alt="web developer Pic2">
+                    <!-- img scr: https://www.flaticon.com/premium-icon/web-development_2888407 -->
+                    <img class="d-flex img-fluid mx-auto col" src="../page3Pic/webDevPic3.png" alt="web developer Pic3">
+                    <!-- img scr: https://www.seekpng.com/ipng/u2q8w7a9w7o0y3o0_aquarius-mediaa-pvt-web-development-images-high-resolution/ -->
+                    <img class="d-flex img-fluid mx-auto col" src="../page3Pic/webDevPic1.png" alt="web developer Pic1">
+                    <!-- img scr: https://www.seekpng.com/ipng/u2t4r5w7e6q8i1r5_web-development-illustration-for-web-developers/  -->  
+                </figure>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="mt-3 px-3 pt-2">
+            <div class="container-fluid">
+                <h1>Contact Me</h1>
+                <div class="row">
+                    <!-- email -->
+                    <nav class="container-fluid col-md" id="emails">
+                        <h2>Emails:</h2>
+                        <p> Private Email: &nbsp; &nbsp;<a class="text-decoration-none"
+                                href="mailto:angelchey22@gmail.com">angelchey22@gmail.com</a>
+                            <br>
+                            School Email: &nbsp; &nbsp;<a class="text-decoration-none"
+                                href="mailto:ANGELCHEY.22@ichat.sp.edu.sg">ANGELCHEY.22@ichat.sp.edu.sg</a>
+                        </p>
+                    </nav>
+                    <!-- social media -->
+                    <nav class="container-fluid pb-3 col-md" id="socials">
+                        <h2 class="pb-1">Socials:</h2>
+                        <a class="px-3" href="https://twitter.com/As_Career_P"><img class="img-fluid"
+                                src="../footerHeaderPic/twitterLogo.png" alt="Twitter Link"></a>
+                        <a class="px-3" href="https://www.facebook.com/profile.php?id=100081528939759"><img
+                                class="img-fluid" src="../footerHeaderPic/facebook-logo.png" alt="Facebook Link"></a>
+                        <a class="px-3" href="https://www.tiktok.com/@as_career_p?lang=en"><img class="img-fluid"
+                                src="../footerHeaderPic/tiktok.png" alt="Tik Tok Link"></a>
+                        <a class="px-3" href="https://www.instagram.com/as_career_prospect/"><img class="img-fluid"
+                                src="../footerHeaderPic/instagram-logo.png" alt="Instagram Link"></a>
+
+                        <!-- 
+                    twitter logo taken from: https://www.iconfinder.com/icons/5282551/tweet_twitter_twitter_logo_icon
+                    facebook logo taken from: flaticon.com/free-icon/facebook-logo_61045
+                    tiktok logo taken from: https://www.flaticon.com/premium-icon/tiktok_2504942?term=tiktok&page=1&position=7&page=1&position=7&related_id=2504942&origin=search
+                    instagram logo taken from: https://www.flaticon.com/free-icon/instagram-logo_87390 
+                -->
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
